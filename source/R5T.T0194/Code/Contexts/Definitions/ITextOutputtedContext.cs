@@ -10,8 +10,9 @@ namespace R5T.T0194
     /// Attributed base context for contexts providing a text output.
     /// </summary>
     [ContextTypeMarker]
-    public interface ITextOutputtedContext : IContextDefinitionMarker
+    public interface ITextOutputtedContext : IContextDefinitionMarker,
+        IHasTextOutput
     {
-        public ITextOutput TextOutput { get; }
+        
     }
 }
